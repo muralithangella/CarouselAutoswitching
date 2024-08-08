@@ -23,9 +23,11 @@ const Carosel = () => {
   ];
 
   useEffect(() => {
-    setTimeout(() => {
+    const fetchingItems = setTimeout(() => {
       handleNextButton();
     }, 5000);
+
+    return () => clearTimeout(fetchingItems);
   });
   const handlePrevButton = () => {
     if (atciveItem == 0) {
@@ -49,8 +51,8 @@ const Carosel = () => {
             className="Carosel_Image"
             src={ListOfImages[atciveItem].image}
             alt={ListOfImages[atciveItem].title}
-            width={"200px"}
-            height={"100px"}
+            width={"500px"}
+            height={"500px"}
           />
           <p>{ListOfImages[atciveItem].id}</p>
         </div>

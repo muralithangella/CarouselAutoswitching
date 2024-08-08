@@ -4,5 +4,6 @@
 }
 .Carosel_Image {
   border: 1px solid blue;
-  padding: 100px;
+  background-color: black;
+  border-radius: 10%;
 }
