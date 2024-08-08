@@ -5,24 +5,27 @@ const Carosel = () => {
     {
       id: "List 1",
       title: "Parrot",
-      image: "https://images.app.goo.gl/DLfwXFRBE9BBfRCV9",
+      image:
+        "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Bed/1.png",
     },
     {
       id: "List 2",
       title: "Flower",
-      image: "https://images.app.goo.gl/c9v38CXHtCiyjRBZ7",
+      image:
+        "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/1.png",
     },
     {
       id: "List 3",
       title: "Leaf",
-      image: "https://images.app.goo.gl/Dsm3apzffPttXFMT8",
+      image:
+        "https://cdn.dummyjson.com/products/images/furniture/Bedside%20Table%20African%20Cherry/1.png",
     },
   ];
 
   useEffect(() => {
     setTimeout(() => {
       handleNextButton();
-    }, 3000);
+    }, 5000);
   });
   const handlePrevButton = () => {
     if (atciveItem == 0) {
@@ -46,6 +49,8 @@ const Carosel = () => {
             className="Carosel_Image"
             src={ListOfImages[atciveItem].image}
             alt={ListOfImages[atciveItem].title}
+            width={"200px"}
+            height={"100px"}
           />
           <p>{ListOfImages[atciveItem].id}</p>
         </div>
