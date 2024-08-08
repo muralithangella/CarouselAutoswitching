@@ -1,0 +1,2 @@
+# CarouselAutoswitching
+Created with CodeSandbox
